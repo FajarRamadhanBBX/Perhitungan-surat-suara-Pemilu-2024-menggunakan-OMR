@@ -26,3 +26,6 @@ The process is broken down into two main stages:
     * The detected bubbles are first sorted vertically (top-to-bottom) and then divided into three columns representing the hundreds, tens, and units digits.
 -  **Vote Counting per Column:** The system iterates through the bubbles in each column from top to bottom (0 to 9). It counts the number of unmarked bubbles by analyzing the density of black pixels within each bubble's bounding box. The counting stops when a marked bubble (exceeding a pixel density threshold) is found. The number of unmarked bubbles before the first marked one gives the digit for that column.
 -  **Final Tally:** The digits from the three columns are concatenated to produce the final vote count for the candidate.
+
+## Future Improvement
+Currently, the detection of boxes containing number markers is still done manually. In the future, this mechanism can be automated.
